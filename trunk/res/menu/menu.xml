@@ -1,0 +1,9 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+	<item android:id="@+id/newGame"
+        android:title="New Game" />
+    <item android:id="@+id/commuteVibrator"
+        android:title="Vibration" />     
+    <item android:id="@+id/exitGame"
+        android:title="Exit" />
+
+</menu>
