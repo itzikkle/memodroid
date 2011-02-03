@@ -1,0 +1,36 @@
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/win_dialog_layout_root"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content">
+
+	<TextView
+		android:id="@+id/congratulationsTextBox"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_centerHorizontal="true"
+		android:textSize="20dp"
+		android:textColor="#FF0000"
+		android:textStyle="bold"
+		android:text="@string/win_dialog_congratulations" />
+
+	<Button
+		android:id="@+id/buttonMainMenu"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:text="@string/win_dialog_button_mainMenu"
+		android:layout_alignParentBottom="true" />
+	<Button
+		android:id="@+id/buttonHighScore"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:text="@string/win_dialog_button_highScores"
+		android:layout_above="@id/buttonMainMenu" />
+	<Button
+		android:id="@+id/buttonNewGame"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:text="@string/win_dialog_button_newGame"
+		android:layout_above="@id/buttonHighScore" />
+
+</RelativeLayout>

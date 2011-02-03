@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+
+	<RelativeLayout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		android:id="@+id/infoBoard"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+		<TextView
+			android:id="@+id/movesLabelTextBox"
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:layout_alignParentTop="true"
+			android:layout_alignParentLeft="true"
+			android:textSize="18dp"
+			android:textStyle="bold"
+			android:textColor="#FFFFFF"
+			android:text="Moves: "
+			android:paddingLeft="2dp" />
+		<TextView
+			android:id="@+id/movesTextBox"
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:layout_toRightOf="@+id/movesLabelTextBox"
+			android:textSize="18dp"
+			android:textStyle="bold"
+			android:textColor="#FFFFFF"
+			android:text="0" />
+
+		<TextView
+			android:id="@+id/timeLabelTextBox"
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:layout_toLeftOf="@+id/timeTextBox"
+			android:textSize="18dp"
+			android:textStyle="bold"
+			android:textColor="#FFFFFF"
+			android:text="Time: " />
+		<TextView
+			android:id="@+id/timeTextBox"
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:layout_alignParentRight="true"
+			android:textSize="18dp"
+			android:textStyle="bold"
+			android:textColor="#FFFFFF"
+			android:text="00:00"
+			android:paddingRight="2dp" />
+		<TextView
+			android:id="@+id/lineContainer"
+			android:layout_height="4dp"
+			android:layout_width="fill_parent"
+			android:background="@drawable/line"
+			android:paddingBottom="2dp"
+			android:layout_alignBottom="@id/timeTextBox" />
+	</RelativeLayout>
+
+	<RelativeLayout
+		android:id="@+id/memoryBoardContainer"
+		android:layout_width="wrap_content"
+		android:layout_height="fill_parent"
+		android:layout_centerHorizontal="true"
+		android:layout_below="@id/infoBoard">
+		<LinearLayout
+			android:id="@+id/memoryBoard"
+			android:layout_width="wrap_content"
+			android:layout_height="fill_parent"
+			android:orientation="vertical">
+		</LinearLayout>
+	</RelativeLayout>
+
+
+</RelativeLayout>
+
+	
+	

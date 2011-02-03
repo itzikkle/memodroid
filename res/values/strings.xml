@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">Memodroid</string>
+	
+	<!-- UI -->
+	
+	<!-- Preferences -->
+	
+		<!-- Game Settings -->
+	
+	<string name="preference_game_settings">Game Settings</string>
+	<string name="preference_enable_sound">Enable Sound</string>
+	<string name="preference_enable_sound_summary">Disabling sound may improve performance on some devices.</string>
+	
+	<string name="preference_enable_vibration">Enable Vibration</string>
+	<string name="preference_enable_vibration_summary">Enable tactile feedback.</string>
+	
+	<string name="preference_difficulty_level">Difficulty Level</string>
+	<string name="preference_difficulty_level_dialog_title">Choose Difficulty Level</string>
+	
+	<string name="preference_flipover_waiting_time">Flip Over Time</string>
+	<string name="preference_flipover_waiting_time_dialog_title">Choose Flip Over Time</string>
+	
+	
+		<!-- Look & Feel -->
+	<string name="preference_look_and_feel">Look &amp; Feel</string>
+	<string name="preference_tiles_theme">Tiles Theme</string>
+	<string name="preference_tiles_theme_dialog_title">Choose Tiles Theme</string>
+	
+	<string name="preference_tiles_back_theme">Tiles Back Theme</string>
+	<string name="preference_tiles_back_theme_dialog_title">Choose Tiles Back Theme</string>
+	
+		<!-- Game Data -->
+	
+	<string name="preference_game_data">Game Data</string>
+	<string name="preference_clear_high_scores">Clear High Scores</string>
+	<string name="preference_clear_high_scores_dialog">Do you really want to clear all the High Scores?</string>
+	<string name="preference_clear_high_scores_dialog_title">High Scores Management</string>
+	<string name="preference_clear_high_scores_dialog_ok">Clear</string>
+	<string name="preference_clear_high_scores_dialog_cancel">Cancel</string>
+	
+		<!-- About -->
+	
+	<string name="preference_about">About</string>
+	<string name="preference_visit_site">Visit ErKattaSoftware.com</string>
+	<string name="preference_misc">More Information</string>
+	<string name="preference_about_title">About Memodroid</string>
+	<string name="preference_about_summary">Memodroid was made by Marco Cattarin.</string>
+	<string name="preference_credits_title">Credits</string>
+	<string name="preference_credits_summary">Tester: Ugo Diana.\nThe Team Replica.\nSpecial Thanks to Chris Pruett for his enlightening talks.</string>
+	<string name="preference_licence_title">License</string>
+	<string name="preference_licence_summary">Apache License, Version 2.0</string>
+	
+	
+	<!-- Toast Messages -->
+	<string name="toast_vibrationOff">VIBRATION OFF</string>
+	<string name="toast_vibrationOn">VIBRATION ON</string>
+	<string name="toast_highScoresReset">High Scores have been reset</string>
+	
+	<!-- Dialogs -->
+	
+	<string name="win_dialog_title">You Won</string>
+	<string name="win_dialog_title_highScore">You Won - New High Score!</string>
+	<string name="win_dialog_congratulations">CONGRATULATIONS!</string>
+	<string name="win_dialog_moves">MOVES:</string>
+	<string name="win_dialog_time">TIME:</string>
+	<string name="win_dialog_newRecord">NEW RECORD</string>
+	<string name="win_dialog_button_newGame">New Game</string>
+	<string name="win_dialog_button_highScores">High Scores</string>
+	<string name="win_dialog_button_mainMenu">Back To Main Menu</string>
+	
+	<string name="username_dialog_title">NEW HIGH SCORE</string>
+	<string name="username_dialog_description">You made an High Score!\nPlease enter your name:</string>
+	<string name="username_dialog_button_confirm_username">Confirm</string>
+	
+	<!-- High Scores Strings -->
+	
+	<string name="highScores_title">HIGH SCORES</string>
+	<string name="highScores_difficutlyKid">Kid</string>
+	<string name="highScores_difficutlyEasy">Easy</string>
+	<string name="highScores_difficutlyNormal">Normal</string>
+	<string name="highScores_difficutlyHard">Hard</string>
+</resources>

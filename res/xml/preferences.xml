@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+	xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<PreferenceCategory
+		android:title="@string/preference_game_settings">
+
+		<!-- <CheckBoxPreference -->
+		<!-- android:key="enableSound" -->
+		<!-- android:title="@string/preference_enable_sound" -->
+		<!-- android:summaryOn="@string/preference_enable_sound_summary" -->
+		<!-- android:summaryOff="@string/preference_enable_sound_summary" -->
+		<!-- android:enabled="false" -->
+		<!-- android:defaultValue="false" -->
+		<!-- android:persistent="true" -->
+		<!-- /> -->
+		<CheckBoxPreference
+			android:key="enableVibration"
+			android:title="@string/preference_enable_vibration"
+			android:summaryOn="@string/preference_enable_vibration_summary"
+			android:summaryOff="@string/preference_enable_vibration_summary"
+			android:defaultValue="true"
+			android:persistent="true" />
+		<ListPreference
+			android:key="difficultyLevel"
+			android:defaultValue="2"
+			android:title="@string/preference_difficulty_level"
+			android:entries="@array/difficultyLevelNamesArray"
+			android:entryValues="@array/difficultyLevelArray"
+			android:dialogTitle="@string/preference_difficulty_level_dialog_title" />
+		<ListPreference
+			android:key="flipoverWaitingTime"
+			android:defaultValue="1000"
+			android:title="@string/preference_flipover_waiting_time"
+			android:entries="@array/flipOverWaitingTimeNamesArray"
+			android:entryValues="@array/flipOverWaitingTimeArray"
+			android:dialogTitle="@string/preference_flipover_waiting_time_dialog_title" />
+	</PreferenceCategory>
+
+	<PreferenceCategory
+		android:title="@string/preference_look_and_feel">
+
+		<ListPreference
+			android:key="tilesTheme"
+			android:defaultValue="animals"
+			android:title="@string/preference_tiles_theme"
+			android:entries="@array/tilesThemeNamesArray"
+			android:entryValues="@array/tilesThemeArray"
+			android:dialogTitle="@string/preference_tiles_theme_dialog_title" />
+		<ListPreference
+			android:key="tilesBackTheme"
+			android:defaultValue="question"
+			android:title="@string/preference_tiles_back_theme"
+			android:entries="@array/tilesBackNamesArray"
+			android:entryValues="@array/tilesBackArray"
+			android:dialogTitle="@string/preference_tiles_back_theme_dialog_title" />
+
+	</PreferenceCategory>
+
+	<PreferenceCategory
+		android:title="@string/preference_game_data">
+
+		<it.erkatta.memodroid.ui.YesNoDialogPreference
+			android:key="clearHighScores"
+			android:title="@string/preference_clear_high_scores"
+			android:dialogMessage="@string/preference_clear_high_scores_dialog"
+			android:dialogTitle="@string/preference_clear_high_scores_dialog_title"
+			android:negativeButtonText="@string/preference_clear_high_scores_dialog_cancel"
+			android:positiveButtonText="@string/preference_clear_high_scores_dialog_ok" />
+	</PreferenceCategory>
+
+
+	<PreferenceCategory
+		android:title="@string/preference_about">
+
+		<PreferenceScreen
+			android:title="@string/preference_visit_site">
+
+			<intent
+				android:action="android.intent.action.VIEW"
+				android:data="http://www.erkattasoftware.com" />
+
+		</PreferenceScreen>
+
+		<PreferenceScreen
+			android:title="@string/preference_misc">
+
+			<Preference
+				android:title="@string/preference_about_title"
+				android:summary="@string/preference_about_summary"
+				android:enabled="false"
+				android:selectable="false" />
+
+			<Preference
+				android:title="@string/preference_credits_title"
+				android:summary="@string/preference_credits_summary"
+				android:enabled="false"
+				android:selectable="false" />
+
+			<Preference
+				android:title="@string/preference_licence_title"
+				android:summary="@string/preference_licence_summary"
+				android:enabled="false"
+				android:selectable="false" />
+		</PreferenceScreen>
+
+	</PreferenceCategory>
+
+</PreferenceScreen>

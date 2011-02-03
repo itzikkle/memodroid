@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string-array
+		name="difficultyLevelNamesArray">
+		<item>0 - Kid Mode</item>
+		<item>1 - Easy</item>
+		<item>2 - Normal</item>
+		<item>3 - Hard</item>
+	</string-array>
+	<string-array
+		name="difficultyLevelArray">
+		<item>0</item>
+		<item>1</item>
+		<item>2</item>
+		<item>3</item>
+	</string-array>
+
+	<string-array
+		name="flipOverWaitingTimeNamesArray">
+		<item>3 sec - Kid Mode</item>
+		<item>2 sec - Easy</item>
+		<item>1 sec - Normal</item>
+		<item>0.5 sec - Hard</item>
+	</string-array>
+	<string-array
+		name="flipOverWaitingTimeArray">
+		<item>3000</item>
+		<item>2000</item>
+		<item>1000</item>
+		<item>500</item>
+	</string-array>
+
+	<string-array
+		name="tilesThemeNamesArray">
+		<item>Animals</item>
+		<item>Color</item>
+		<item>Flags</item>
+		<item>Road Signs</item>
+		<item>Stickymen</item>
+	</string-array>
+	<string-array
+		name="tilesThemeArray">
+		<item>animals</item>
+		<item>color</item>
+		<item>flag</item>
+		<item>roadsign</item>
+		<item>stickymen</item>
+	</string-array>
+
+	<string-array
+		name="tilesBackNamesArray">
+		<item>Classic</item>
+		<item>Glow</item>
+		<item>Question</item>
+	</string-array>
+	<string-array
+		name="tilesBackArray">
+		<item>classic</item>
+		<item>glow</item>
+		<item>question</item>
+	</string-array>
+</resources>

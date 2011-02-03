@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+
+	<LinearLayout
+		android:id="@+id/highScoreTitleContainer"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical">
+
+		<TextView
+			android:id="@+id/highScoreTitle"
+			android:layout_height="wrap_content"
+			android:layout_width="fill_parent"
+			android:gravity="center_horizontal"
+			android:textSize="20dp"
+			android:text="@string/highScores_title" />
+
+		<TextView
+			android:id="@+id/lineContainerForHighScore"
+			android:layout_height="4dp"
+			android:layout_width="fill_parent"
+			android:background="@drawable/line"
+			android:paddingBottom="2dp" />
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:id="@+id/containerForHighScoreRecords"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		android:layout_below="@id/highScoreTitleContainer">
+
+	</LinearLayout>
+
+
+
+</RelativeLayout>
