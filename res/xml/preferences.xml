@@ -35,6 +35,13 @@
 			android:entries="@array/flipOverWaitingTimeNamesArray"
 			android:entryValues="@array/flipOverWaitingTimeArray"
 			android:dialogTitle="@string/preference_flipover_waiting_time_dialog_title" />
+		<CheckBoxPreference
+			android:key="slideMode"
+			android:title="@string/preference_slideMode"
+			android:summaryOn="@string/preference_slideMode_summary"
+			android:summaryOff="@string/preference_slideMode_summary"
+			android:defaultValue="false"
+			android:persistent="true" />			
 	</PreferenceCategory>
 
 	<PreferenceCategory

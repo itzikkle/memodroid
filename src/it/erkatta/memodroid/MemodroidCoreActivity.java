@@ -67,6 +67,7 @@ public class MemodroidCoreActivity extends Activity {
     public static final String PREFERENCE_ENABLE_VIBRATION = "enableVibration";
     public static final String PREFERENCE_TILES_THEME = "tilesTheme";
     public static final String PREFERENCE_TILES_BACK_THEME = "tilesBackTheme";
+    public static final String PREFERENCE_SLIDE_MODE = "slideMode";
 
     /* DIALOGS */
     private UserNameRequestDialog userNameDialog;
@@ -79,6 +80,7 @@ public class MemodroidCoreActivity extends Activity {
     private HighScoreManager hsManager;
     private SharedPreferences prefs;
     private HighScoreRecord score;
+    private Boolean isSlideModeActive;
 
     /* LAYOUT VARIABLES */
     private String tileBackThemeName;
@@ -127,8 +129,15 @@ public class MemodroidCoreActivity extends Activity {
                                     if (isVibrationActive) {
                                         vibrator.vibrate(60);
                                     }
-                                    gameEngine.selectedTile.hide();
-                                    precedentMoveselectedTile.hide();
+                                    if(isSlideModeActive){
+                                        gameEngine.selectedTile.gone();
+                                        precedentMoveselectedTile.gone();
+                                    }
+                                    else{
+                                        gameEngine.selectedTile.hide();
+                                        precedentMoveselectedTile.hide();
+                                    }
+                                    
                                     if (gameEngine.tileCoupleRemoved() == 0) {
                                         gameEngine.stopTimeUpdate();
                                         score = new HighScoreRecord(gameEngine.totalMoves,
@@ -169,6 +178,7 @@ public class MemodroidCoreActivity extends Activity {
         prefs = getSharedPreferences(PREFERENCE_NAME, MODE_PRIVATE);
         vibrator = (Vibrator) this.getSystemService(Context.VIBRATOR_SERVICE);
         isVibrationActive = prefs.getBoolean(PREFERENCE_ENABLE_VIBRATION, false);
+        isSlideModeActive = prefs.getBoolean(PREFERENCE_SLIDE_MODE, false);
         waitingTimeBeforeFlippingOver = Integer.parseInt(prefs.getString(
                 PREFERENCE_FLIPOVER_WAITING_TIME, "1000"));
         setUpViews();
