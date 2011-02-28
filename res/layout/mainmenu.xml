@@ -22,17 +22,10 @@
 			android:id="@+id/mainMenuTitle"
 			android:src="@drawable/title"
 			android:adjustViewBounds="true"
-			android:layout_width="336dp"
-			android:layout_height="153dp" />
-
-		<ImageView
-			android:id="@+id/logoIntro"
-			android:src="@drawable/logo_intro"
-			android:adjustViewBounds="true"
-			android:layout_width="250dp"
-			android:layout_height="364dp"
 			android:scaleType="fitXY"
-			android:layout_centerInParent="true" />
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:paddingTop="20dp"  />
 
 		<ImageView
 			android:id="@+id/startButton"
@@ -57,12 +50,13 @@
 			android:id="@+id/highScoreButton"
 			android:src="@drawable/ui_button_highscores"
 			android:adjustViewBounds="true"
-			android:layout_width="64dp"
-			android:layout_height="78dp"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
 			android:scaleType="fitXY"
 			android:clickable="true"
-			android:layout_alignParentBottom="true"
-			android:layout_alignParentRight="true" />
+			android:layout_below="@id/optionButton"
+			android:layout_centerHorizontal="true"
+			android:layout_marginTop="20dp" />
 
 	</RelativeLayout>
 
