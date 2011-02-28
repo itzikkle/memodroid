@@ -20,7 +20,9 @@
 	
 	<string name="preference_flipover_waiting_time">Flip Over Time</string>
 	<string name="preference_flipover_waiting_time_dialog_title">Choose Flip Over Time</string>
-	
+
+	<string name="preference_slideMode">Slide Mode</string>
+	<string name="preference_slideMode_summary">This game mode makes it more challenging.\nTiles will slide occupying the space left empty from the erased tiles.</string>	
 	
 		<!-- Look & Feel -->
 	<string name="preference_look_and_feel">Look &amp; Feel</string>
